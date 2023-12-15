@@ -101,6 +101,7 @@ body {
 .product-box {
   position: relative;
   overflow: hidden;
+  margin-bottom: 8px;
 }
 .product-box:hover .quick-view {
   transform: translateY(0);
