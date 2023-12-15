@@ -1,0 +1,209 @@
+// variables
+
+$primary: #85100E !important;
+$secondary: #E9DB89 !important;
+$white: #fff;
+
+
+.txt-theme {
+    color: $secondary;
+}
+
+@font-face {
+    font-family: "horse-font";
+    src: url('../fonts/horse-font.woff2');
+}
+
+@font-face {
+    font-family: "typewrite-font";
+    src: url('../fonts/ufonts.com_american-typewriter-condensed.ttf');
+}
+
+.horse-font {
+    font-family: "horse-font";
+}
+
+.navbar-toggler {
+    position: absolute;
+    z-index: 11;
+    top: 15px;
+    background: #e9db80;
+    right: 15px;
+}
+
+.typewrite-font {
+    font-family: "typewrite-font";
+}
+
+body {
+    background-image: url('../images/c5cee5_6a5ff6781756407c9fa1a673b1723451~mv2.webp');
+    background-attachment: fixed;
+    background-repeat: repeat;
+}
+
+.txt-yellow {
+    font-family: "typewrite-font", serif;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: #c1b46b !important;
+    text-align: center;
+}
+
+
+.btn-theme {
+    transition: all 0.2s ease, visibility 0s;
+    border-radius: 50px;
+    box-shadow: 0 1px 0 rgba(14, 24, 33, 0.33);
+    background: linear-gradient(180deg, #F4EAB1 0%, #94821B 100%);
+    text-decoration: none;
+    padding: 10px;
+    display: inline;
+    width: 177px;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.txt-secondary {
+    color: #C8BC75;
+}
+
+.txt-para {
+    font-size: 12px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.page-layout {
+    background: #000;
+}
+
+
+.siteHeader {
+    background: #fff;
+
+    .navCustom {
+        .nav-item {
+            margin: 0 15px;
+        }
+    }
+}
+
+.add-bg-up-down {
+    position: relative;
+
+    &:before {
+        content: "";
+        height: 10px;
+        top: -8px;
+        position: absolute;
+        background: url(../images/beforebg.png);
+        left: -8px;
+        right: -8px;
+    }
+
+    &:after {
+        content: "";
+        height: 10px;
+        bottom: -8px;
+        position: absolute;
+        background: url(../images/afterbg.png);
+        left: -8px;
+        right: -8px;
+    }
+}
+
+.product-box {
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        .quick-view{
+             transform: translateY(0);
+            
+        }
+       
+    }
+}
+
+.quick-view {
+    position: absolute;
+    height: 45px;
+    left: 0;
+    background: #ffffffba;
+    color: #000;
+    right: 0;
+    bottom: 0;
+    transition: all 0.4s ease;
+    transform: translateY(45px);
+    display: flex;
+             align-items: center;
+             justify-content: center;
+             
+             a{
+                text-decoration: none;
+                text-transform: capitalize;
+                font-family:'typewrite-font' ;
+                color: #000;
+             }
+}
+
+
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 960px;
+    }
+}
+
+.offer {
+    animation: SimpleBadgeSwing 3s infinite ease-in-out;
+    position: relative;
+    left: 12%;
+    top: -42px;
+
+    @media(max-width:1024px) {
+        display: none;
+    }
+}
+
+
+@-webkit-keyframes SimpleBadgeSwing {
+    0% {
+        -webkit-transform: rotate(-2deg) scale(0.9);
+        transform: rotate(-2deg) scale(0.9)
+    }
+
+    50% {
+        -webkit-transform: rotate(2deg) scale(0.9);
+        transform: rotate(2deg) scale(0.9)
+    }
+
+    100% {
+        -webkit-transform: rotate(-2deg) scale(0.9);
+        transform: rotate(-2deg) scale(0.9)
+    }
+}
+
+@keyframes SimpleBadgeSwing {
+    0% {
+        -webkit-transform: rotate(-2deg) scale(0.9);
+        transform: rotate(-2deg) scale(0.9)
+    }
+
+    50% {
+        -webkit-transform: rotate(2deg) scale(0.9);
+        transform: rotate(2deg) scale(0.9)
+    }
+
+    100% {
+        -webkit-transform: rotate(-2deg) scale(0.9);
+        transform: rotate(-2deg) scale(0.9)
+    }
+}
