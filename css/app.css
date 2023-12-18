@@ -41,18 +41,25 @@ body {
 }
 
 .btn-theme {
-  transition: all 0.2s ease, visibility 0s;
   border-radius: 50px;
   box-shadow: 0 1px 0 rgba(14, 24, 33, 0.33);
   background: linear-gradient(180deg, #F4EAB1 0%, #94821B 100%);
   text-decoration: none;
   padding: 10px;
-  display: inline;
+  display: inline-block;
   width: 177px;
-  font-size: 12px;
+  font-size: 11px;
   color: black;
   font-weight: 600;
   text-align: center;
+  transition: all 0.2s ease-in-out;
+  font-family: "typewritter";
+  letter-spacing: 2px;
+  width: 220px;
+}
+.btn-theme:hover {
+  letter-spacing: 3px;
+  color: black;
 }
 
 .txt-secondary {
@@ -67,6 +74,14 @@ body {
 
 .page-layout {
   background: #000;
+  background-image: url("../images/BlankPage-01_edited-home.webp");
+  margin-bottom: 50px;
+  background-size: cover;
+  background-position: top;
+}
+
+.pointer-none {
+  pointer-events: none;
 }
 
 .siteHeader {
@@ -74,6 +89,19 @@ body {
 }
 .siteHeader .navCustom .nav-item {
   margin: 0 15px;
+}
+.siteHeader .navCustom .nav-item .nav-link {
+  color: rgb(76, 76, 76);
+  font-size: 15px;
+  transition: all 0.4s ease-in-out;
+}
+.siteHeader .navCustom .nav-item .nav-link:hover {
+  color: #B6B6B5;
+}
+@media (min-width: 1024px) {
+  .siteHeader .navCustom .nav-item {
+    margin: 0 33px;
+  }
 }
 
 .add-bg-up-down {
@@ -105,6 +133,10 @@ body {
 }
 .product-box:hover .quick-view {
   transform: translateY(0);
+}
+
+.fz-32 {
+  font-size: 32px;
 }
 
 .quick-view {
